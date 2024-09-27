@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.7.18</version>
+		<version>3.2.10</version><!--2.7.18-->
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
@@ -37,30 +37,43 @@
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-jasper</artifactId>
         </dependency>
-
         <!-- JSTL Dependency -->
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>jstl</artifactId>
-        </dependency>
+        <!--<dependency>                         -->
+        <!--    <groupId>javax.servlet</groupId> -->
+        <!--    <artifactId>jstl</artifactId>    -->
+        <!--</dependency>                        -->
 
-        <!--스프링부트 3.0이상이라면 위의 코드대신 아래 코드를 사용하여 의존성을 주입해줘야한다.-->
-        <!--<dependency>                                             -->
-        <!--    <groupId>jakarta.servlet</groupId>                   -->
-        <!--    <artifactId>jakarta.servlet-api</artifactId>         -->
-        <!--                                                         -->
-        <!--    <scope>provided</scope>                              -->
-        <!--</dependency>                                            -->
-        <!--<dependency>                                             -->
-        <!--    <groupId>jakarta.servlet.jsp.jstl</groupId>          -->
-        <!--    <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>-->
-        <!--                                                         -->
-        <!--</dependency>                                            -->
-        <!--<dependency>                                             -->
-        <!--    <groupId>org.glassfish.web</groupId>                 -->
-        <!--    <artifactId>jakarta.servlet.jsp.jstl</artifactId>    -->
-        <!--                                                         -->
-        <!--</dependency>                                            -->
+        <!--스프링부트 3.0이상이라면 위의 코드대신 아래 코드를 사용하여 의존성을 주입해줘야한다.
+            <dependency>
+                <groupId>jakarta.servlet</groupId>
+                <artifactId>jakarta.servlet-api</artifactId>
+                <version>6.0.0</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>jakarta.servlet.jsp.jstl</groupId>
+                <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+                <version>3.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.glassfish.web</groupId>
+                <artifactId>jakarta.servlet.jsp.jstl</artifactId>
+                <version>3.0.1</version>
+            </dependency>
+        -->
+        <dependency>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.servlet.jsp.jstl</groupId>
+            <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.web</groupId>
+            <artifactId>jakarta.servlet.jsp.jstl</artifactId>
+        </dependency>
 
 	</dependencies>
 
