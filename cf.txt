@@ -1,0 +1,5 @@
+2024.09.27
+
+cf.
+https://github.com/thymeleaf/thymeleaf/blob/3.1-master/examples/spring6/thymeleaf-examples-spring6-thvsjsp/src/main/webapp/WEB-INF/templates/subscribejsp.jsp
+
